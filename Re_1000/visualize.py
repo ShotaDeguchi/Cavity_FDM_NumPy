@@ -179,6 +179,10 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    # plt.xlim(.75, 1.)
+    # plt.ylim(.75, 1.)
+    # plt.tick_params(left=False, right=False, bottom=False, top=False, 
+    #                 labelleft=False, labelbottom=False)
     plt.tight_layout()
     plt.savefig("./div.svg")
     plt.clf()
