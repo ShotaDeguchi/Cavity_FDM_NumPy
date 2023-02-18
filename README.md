@@ -21,7 +21,7 @@ The following sumamrizes results at different Reynolds numbers.
 
 Re: Reynolds number
 
-t: dimensionless time required till convergence (velocity residual < 10^-6)
+t: dimensionless time required till the convergence (velocity residual $\le \delta$)
 
 ### $\Delta x = 5 \times 10^{-3}$
 | Re | t | velocity norm | streamline | pressure | u at the geometric center | v at the geometric center |
