@@ -13,7 +13,7 @@ v at the geometric center: https://gist.github.com/ivan-pi/caa6c6737d36a9140fbcf
 ## Results
 Cavity flow is a steady problem. We consider that the field has reached to a steady state when the following is satisfied:
 ```math
-\max \left( \frac{\| u^{(n+1)} - u^{(n)} \|_2}{\| u^{(n)} \|_2}, \frac{\| v^{(n+1)} - v^{(n)} \|_2}{\| v^{(n)} \|_2} \right) < \delta
+\max \left( \frac{\| u^{(n+1)} - u^{(n)} \|_2}{\| u^{(n)} \|_2}, \frac{\| v^{(n+1)} - v^{(n)} \|_2}{\| v^{(n)} \|_2} \right) \le \delta
 ```
 where $\delta$ is the convergence tolerance, set to $\delta = 10^{-6}$. 
 
