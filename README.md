@@ -19,12 +19,12 @@ where $\delta$ is the convergence tolerance, set to $\delta = 10^{-6}$.
 
 The following sumamrizes results at different Reynolds numbers. 
 
-Re: Reynolds number
+$\text{Re}$: Reynolds number
 
-t: dimensionless time required till the convergence (velocity residual $\le \delta$)
+$t$: dimensionless time required till the convergence (velocity residual $\le \delta$)
 
 ### $\Delta x = 5 \times 10^{-3}$
-| Re | t | velocity norm | streamline | pressure | u at the geometric center | v at the geometric center |
+| $\text{Re}$ | $t$ | velocity norm | streamline | pressure | u at the geometric center | v at the geometric center |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 100 | 15.4 | <img src="./Re_100/vel_norm.png"> | <img src="./Re_100/psi.png"> | <img src="./Re_100/prs.png"> | <img src="./Re_100/comparison_u.png"> | <img src="./Re_100/comparison_v.png"> |
 | 400 | 26.8 | <img src="./Re_400/vel_norm.png"> | <img src="./Re_400/psi.png"> | <img src="./Re_400/prs.png"> | <img src="./Re_400/comparison_u.png"> | <img src="./Re_400/comparison_v.png"> |
@@ -33,7 +33,7 @@ t: dimensionless time required till the convergence (velocity residual $\le \del
 | 5,000 | 148.5 | <img src="./Re_5000/vel_norm.png"> | <img src="./Re_5000/psi.png"> | <img src="./Re_5000/prs.png"> | <img src="./Re_5000/comparison_u.png"> | <img src="./Re_5000/comparison_v.png"> |
 
 ### $\Delta x = 2 \times 10^{-3}$
-| Re | velocity norm | streamline | pressure | u at the geometric center | v at the geometric center |
+| $\text{Re}$ | velocity norm | streamline | pressure | u at the geometric center | v at the geometric center |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | 1,000 | <img src="./Re_1000_highres/vel_norm.png"> | <img src="./Re_1000_highres/psi.png"> | <img src="./Re_1000_highres/prs.png"> | <img src="./Re_1000_highres/comparison_u.png"> | <img src="./Re_1000_highres/comparison_v.png"> |
 | 3,200 | <img src="./Re_3200_highres/vel_norm.png"> | <img src="./Re_3200_highres/psi.png"> | <img src="./Re_3200_highres/prs.png"> | <img src="./Re_3200_highres/comparison_u.png"> | <img src="./Re_3200_highres/comparison_v.png"> |
