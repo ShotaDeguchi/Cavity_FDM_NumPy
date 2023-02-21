@@ -6,6 +6,8 @@ FDM simulation based on fractional step method, KK scheme (4th-order approximati
 
 Compared with Ghia+1986: https://doi.org/10.1016/0021-9991(82)90058-4
 
+Data is available in the original paper, or the following repositories:
+
 u at the geometric center: https://gist.github.com/ivan-pi/3e9326d18a366ffe6a8e5bfda6353219
 
 v at the geometric center: https://gist.github.com/ivan-pi/caa6c6737d36a9140fbcf2ea59c78b3c
