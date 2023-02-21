@@ -19,9 +19,10 @@ where $\delta$ is the convergence tolerance, set to $\delta = 10^{-6}$.
 
 The following sumamrizes results at different Reynolds numbers. 
 
-$\text{Re}$: Reynolds number
-
-$t$: dimensionless time required till the convergence (velocity residual $\le \delta$)
+| Column name | Description | 
+|:---:|:---:|
+| $\text{Re}$ | Reynolds number (inertia vs viscosity) |
+| $t$ | Dimensionless time until the convergence (velocity residual $\le \delta$) |
 
 ### $\Delta x = 5 \times 10^{-3}$
 | $\text{Re}$ | $t$ | velocity norm | streamline | pressure | $u$ at the geometric center | $v$ at the geometric center |
