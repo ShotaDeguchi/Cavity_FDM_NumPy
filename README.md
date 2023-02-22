@@ -1,8 +1,9 @@
 # Cavity flow with FDM (implemented in NumPy)
 
-Supplementary material for the final report of Computer Simulations (Winter Term 2022, Prof. Ono). 
-
-FDM simulation based on fractional step method, KK scheme (4th-order approximation with 4th-order numerical viscosity) for convection, and 2nd-order central difference scheme for pressure gradient and viscosity terms. 
+FDM simulation based on :
+* fractional step method for time integration
+* KK scheme (4th-order approximation with 4th-order numerical viscosity) for convection
+* 2nd-order central difference scheme for pressure gradient and viscosity terms
 
 Compared with Ghia+1986: https://doi.org/10.1016/0021-9991(82)90058-4
 
