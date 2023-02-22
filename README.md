@@ -1,6 +1,6 @@
 # Cavity flow with FDM (implemented in NumPy)
 
-FDM simulation based on :
+FDM simulation of lid-driven cavity flow based on :
 * fractional step method for time integration
 * KK scheme (4th-order approximation with 4th-order numerical viscosity) for convection
 * 2nd-order central difference scheme for pressure gradient and viscosity terms
