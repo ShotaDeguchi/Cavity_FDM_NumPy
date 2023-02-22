@@ -5,13 +5,7 @@ FDM simulation based on :
 * KK scheme (4th-order approximation with 4th-order numerical viscosity) for convection
 * 2nd-order central difference scheme for pressure gradient and viscosity terms
 
-Compared with Ghia+1986: https://doi.org/10.1016/0021-9991(82)90058-4
-
-Data is available in the original paper, or the following repositories:
-
-u at the geometric center: https://gist.github.com/ivan-pi/3e9326d18a366ffe6a8e5bfda6353219
-
-v at the geometric center: https://gist.github.com/ivan-pi/caa6c6737d36a9140fbcf2ea59c78b3c
+The results are compared with the reference solution presented in [Ghia+1986](https://doi.org/10.1016/0021-9991(82)90058-4). 
 
 ## Results
 Cavity flow is a steady problem. We consider that the field has reached to a steady state when the following is satisfied:
@@ -20,15 +14,17 @@ Cavity flow is a steady problem. We consider that the field has reached to a ste
 ```
 where $\delta$ is the convergence tolerance, set to $\delta = 10^{-6}$. 
 
-The following sumamrizes results at different Reynolds numbers. 
+The following sumamrizes results at different Reynolds numbers and different resolutions. 
 
 | Column name | Description | 
 |:---:|:---:|
 | $\text{Re}$ | Reynolds number (inertia vs viscosity) |
 | $t$ | Dimensionless time until the convergence (velocity residual $\le \delta$) |
+| $u(x=0.5)$ | Horizontal velocity along the geometric center |
+| $v(y=0.5)$ | Vertical velocity along the geometric center |
 
 ### $\Delta x = 5 \times 10^{-3}$
-| $\text{Re}$ | $t$ | velocity norm | streamline | pressure | $u$ at the geometric center | $v$ at the geometric center |
+| $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 100 | 15.4 | <img src="./Re_100/vel_norm.png"> | <img src="./Re_100/psi.png"> | <img src="./Re_100/prs.png"> | <img src="./Re_100/comparison_u.png"> | <img src="./Re_100/comparison_v.png"> |
 | 400 | 26.8 | <img src="./Re_400/vel_norm.png"> | <img src="./Re_400/psi.png"> | <img src="./Re_400/prs.png"> | <img src="./Re_400/comparison_u.png"> | <img src="./Re_400/comparison_v.png"> |
@@ -37,7 +33,7 @@ The following sumamrizes results at different Reynolds numbers.
 | 5,000 | 148.5 | <img src="./Re_5000/vel_norm.png"> | <img src="./Re_5000/psi.png"> | <img src="./Re_5000/prs.png"> | <img src="./Re_5000/comparison_u.png"> | <img src="./Re_5000/comparison_v.png"> |
 
 ### $\Delta x = 2 \times 10^{-3}$
-| $\text{Re}$ | $t$ | velocity norm | streamline | pressure | $u$ at the geometric center | $v$ at the geometric center |
+| $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1,000 | 30.7 | <img src="./Re_1000_highres/vel_norm.png"> | <img src="./Re_1000_highres/psi.png"> | <img src="./Re_1000_highres/prs.png"> | <img src="./Re_1000_highres/comparison_u.png"> | <img src="./Re_1000_highres/comparison_v.png"> |
 | 3,200 | 68.4 | <img src="./Re_3200_highres/vel_norm.png"> | <img src="./Re_3200_highres/psi.png"> | <img src="./Re_3200_highres/prs.png"> | <img src="./Re_3200_highres/comparison_u.png"> | <img src="./Re_3200_highres/comparison_v.png"> |
