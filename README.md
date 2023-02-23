@@ -2,7 +2,7 @@
 
 FDM simulation of lid-driven cavity flow based on :
 * fractional step method for time integration
-* KK scheme (4th-order approximation with 4th-order numerical viscosity) for convection
+* [Kawamura-Kuwahara scheme](https://doi.org/10.2514/6.1984-340) (4th-order approximation with 4th-order numerical viscosity) for convection
 * 2nd-order central difference scheme for pressure gradient and viscosity terms
 
 The results are compared with the reference solution presented in [Ghia+1986](https://doi.org/10.1016/0021-9991(82)90058-4). 
