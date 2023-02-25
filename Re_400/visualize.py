@@ -129,7 +129,7 @@ def main():
     plt.close()
 
     plt.figure(figsize=(5, 4))
-    limit = .25
+    limit = .15
     vmin, vmax = - limit, limit
     # limit = np.abs(p).max()
     # scale = .15

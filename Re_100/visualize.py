@@ -130,7 +130,7 @@ def main():
     plt.close()
 
     plt.figure(figsize=(5, 4))
-    limit = .3
+    limit = .15
     vmin, vmax = - limit, limit
     # limit = np.abs(p).max()
     # scale = .15
@@ -148,7 +148,6 @@ def main():
     plt.ylabel("y")
     plt.title(f"p (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./prs.png", dpi=300)
     plt.savefig("./prs.png", dpi=300)
     plt.clf()
     plt.close()
