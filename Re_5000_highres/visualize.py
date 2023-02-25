@@ -7,7 +7,6 @@ import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 import pyevtk
 
-
 def main():
     # discretization (regular grid)
     xmin, xmax = 0., 1.
@@ -60,8 +59,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"u (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./vel_x.svg")
+    plt.savefig("./vel_x.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -78,8 +78,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"v (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./vel_y.svg")
+    plt.savefig("./vel_y.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -97,8 +98,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"vel norm (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./vel_norm.svg")
+    plt.savefig("./vel_norm.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -117,15 +119,18 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"psi (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./psi.svg")
+    plt.savefig("./psi.png", dpi=300)
     plt.clf()
     plt.close()
 
     plt.figure(figsize=(5, 4))
-    limit = np.abs(p).max()
-    scale = .15
-    vmin, vmax = - scale * limit, scale * limit
+    limit = .15
+    vmin, vmax = - limit, limit
+    # limit = np.abs(p).max()
+    # scale = .15
+    # vmin, vmax = - scale * limit, scale * limit
     vticks = (vmax - vmin) / 4
     bounds = np.linspace(vmin, vmax, nbar)
     norm = colors.BoundaryNorm(bounds, cmap.N)
@@ -137,8 +142,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"p (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./prs.svg")
+    plt.savefig("./prs.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -156,8 +162,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"cfl number (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./cfl.svg")
+    plt.savefig("./cfl.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -179,19 +186,20 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"vel div (Re={Re:.1f})")
     # plt.xlim(.75, 1.)
     # plt.ylim(.75, 1.)
     # plt.tick_params(left=False, right=False, bottom=False, top=False, 
     #                 labelleft=False, labelbottom=False)
     plt.tight_layout()
-    plt.savefig("./div.svg")
+    plt.savefig("./div.png", dpi=300)
     plt.clf()
     plt.close()
 
     plt.figure(figsize=(4, 4))
     # Ghia+1982: horizontal velocity along the geometric center
     y_Ghia = [1., 0.9766, 0.9688, 0.9609, 0.9531, 0.8516, 0.7344, 0.6172, 0.5, 0.4531, 0.2813, 0.1719, 0.1016, 0.0703, 0.0625, 0.0547, 0.]
-    u_Ghia = [1., 0.48223, 0.4612, 0.45992, 0.46036, 0.33556, 0.20087, 0.08183, -0.03039, -0.07404, -0.22855, -0.3305, -0.40435, -0.43643, -0.42901, -0.41165, 0.]
+    u_Ghia = [1., 0.75837, 0.68439, 0.61756, 0.55892, 0.29093, 0.16256, 0.02135, -0.11477, -0.17119, -0.32726, -0.24299, -0.14612, -0.10338, -0.09266, -0.08186, 0.]
     plt.scatter(u_Ghia[::-1], y_Ghia[::-1], c="k", marker="s", label="Ghia+1982")
     plt.plot(u[:, int(nx / 2)], Y[:, int(nx / 2)], c="r", ls="--", label="FDM")
     plt.legend(loc="best")
@@ -199,14 +207,13 @@ def main():
     plt.ylabel("y")
     plt.grid(alpha=.3)
     plt.tight_layout()
-    plt.savefig("./comparison_u.svg")
     plt.clf()
     plt.close()
 
     plt.figure(figsize=(4, 4))
     # Ghia+1982: vertical velocity along the geometric center
     x_Ghia = [1., 0.9688, 0.9609, 0.9531, 0.9453, 0.9063, 0.8594, 0.8047, 0.5, 0.2344, 0.2266, 0.1563, 0.0938, 0.0781, 0.0703, 0.0625, 0.]
-    v_Ghia = [0., -0.49774, -0.55069, -0.55408, -0.52876, -0.41442, -0.36214, -0.30018, 0.00945, 0.2728, 0.28066, 0.35368, 0.42951, 0.43648, 0.43329, 0.42447, 0.]
+    v_Ghia = [0., -0.12146, -0.15663, -0.19254, -0.22847, -0.23827, -0.44993, -0.38598, 0.05186, 0.30174, 0.30203, 0.28124, 0.22965, 0.2092, 0.19713, 0.1836, 0.]
     plt.scatter(x_Ghia[::-1], v_Ghia[::-1], c="k", marker="s", label="Ghia+1982")
     plt.plot(X[int(nx / 2), :], v[int(nx / 2), :], c="r", ls="--", label="FDM")
     plt.legend(loc="best")
@@ -214,7 +221,6 @@ def main():
     plt.ylabel("v")
     plt.grid(alpha=.3)
     plt.tight_layout()
-    plt.savefig("./comparison_v.svg")
     plt.clf()
     plt.close()
 

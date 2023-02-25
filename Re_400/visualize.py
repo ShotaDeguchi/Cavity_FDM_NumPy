@@ -62,8 +62,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"u (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./vel_x.svg")
+    plt.savefig("./vel_x.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -80,8 +81,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"v (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./vel_y.svg")
+    plt.savefig("./vel_y.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -99,8 +101,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"vel norm (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./vel_norm.svg")
+    plt.savefig("./vel_norm.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -119,15 +122,18 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"psi (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./psi.svg")
+    plt.savefig("./psi.png", dpi=300)
     plt.clf()
     plt.close()
 
     plt.figure(figsize=(5, 4))
-    limit = np.abs(p).max()
-    scale = .15
-    vmin, vmax = - scale * limit, scale * limit
+    limit = .25
+    vmin, vmax = - limit, limit
+    # limit = np.abs(p).max()
+    # scale = .15
+    # vmin, vmax = - scale * limit, scale * limit
     vticks = (vmax - vmin) / 4
     bounds = np.linspace(vmin, vmax, nbar)
     norm = colors.BoundaryNorm(bounds, cmap.N)
@@ -139,8 +145,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"p (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./prs.svg")
+    plt.savefig("./prs.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -158,8 +165,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"cfl number (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./cfl.svg")
+    plt.savefig("./cfl.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -181,8 +189,9 @@ def main():
     plt.ylim(0., 1.)
     plt.xlabel("x")
     plt.ylabel("y")
+    plt.title(f"vel div (Re={Re:.1f})")
     plt.tight_layout()
-    plt.savefig("./div.svg")
+    plt.savefig("./div.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -197,7 +206,7 @@ def main():
     plt.ylabel("y")
     plt.grid(alpha=.3)
     plt.tight_layout()
-    plt.savefig("./comparison_u.svg")
+    plt.savefig("./comparison_u.png", dpi=300)
     plt.clf()
     plt.close()
 
@@ -212,7 +221,7 @@ def main():
     plt.ylabel("v")
     plt.grid(alpha=.3)
     plt.tight_layout()
-    plt.savefig("./comparison_v.svg")
+    plt.savefig("./comparison_v.png", dpi=300)
     plt.clf()
     plt.close()
 
