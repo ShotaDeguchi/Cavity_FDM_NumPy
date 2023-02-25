@@ -1,4 +1,4 @@
-# Cavity flow with FDM (implemented in NumPy)
+# Cavity flow with FDM (NumPy implementation)
 
 FDM simulation of lid-driven cavity flow based on :
 * fractional step method for time integration
@@ -40,5 +40,3 @@ The following sumamrizes results at different Reynolds numbers and different res
 | 1,000 | 30.7 | <img src="./Re_1000_highres/vel_norm.png"> | <img src="./Re_1000_highres/psi.png"> | <img src="./Re_1000_highres/prs.png"> | <img src="./Re_1000_highres/comparison_u.png"> | <img src="./Re_1000_highres/comparison_v.png"> |
 | 3,200 | 68.4 | <img src="./Re_3200_highres/vel_norm.png"> | <img src="./Re_3200_highres/psi.png"> | <img src="./Re_3200_highres/prs.png"> | <img src="./Re_3200_highres/comparison_u.png"> | <img src="./Re_3200_highres/comparison_v.png"> |
 | 5,000 | 134.1 | <img src="./Re_5000_highres/vel_norm.png"> | <img src="./Re_5000_highres/psi.png"> | <img src="./Re_5000_highres/prs.png"> | <img src="./Re_5000_highres/comparison_u.png"> | <img src="./Re_5000_highres/comparison_v.png"> |
-
-
