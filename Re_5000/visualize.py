@@ -22,7 +22,7 @@ def main():
     X, Y = np.meshgrid(x, y)
 
     # parameters
-    Re = 3200.       # Reynolds number
+    Re = 5000.       # Reynolds number
     k = 1. / Re      # diffusion rate (as in diffusion eq)
     beta = 1. / 4.   # coef for numerical viscosity in KK scheme
 
