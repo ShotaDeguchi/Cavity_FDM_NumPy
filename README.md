@@ -1,6 +1,6 @@
 # Cavity flow with FDM (NumPy implementation)
 
-FDM simulation of lid-driven cavity flow based on :
+FDM (Finite Difference Method) simulation of lid-driven cavity flow based on :
 * fractional step method for time integration
 * [Kawamura-Kuwahara scheme](https://doi.org/10.2514/6.1984-340) (4th-order approximation with 4th-order numerical viscosity) for convection
 * 2nd-order central difference scheme for pressure gradient and viscosity terms
@@ -14,7 +14,7 @@ Cavity flow is a steady problem. We consider that the field has reached to a ste
 ```
 where $\delta$ is the convergence tolerance, set to $\delta = 10^{-6}$. 
 
-The following sumamrizes results at different Reynolds numbers and different resolutions. 
+The following summarizes results at different Reynolds numbers and different resolutions. 
 
 | Column name | Description | 
 |:---:|:---:|
