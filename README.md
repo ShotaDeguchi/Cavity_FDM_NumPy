@@ -40,3 +40,11 @@ The following summarizes results at different Reynolds numbers and different res
 | 1,000 | 30.7 | <img src="./Re_1000_highres/vel_norm.png"> | <img src="./Re_1000_highres/psi.png"> | <img src="./Re_1000_highres/prs.png"> | <img src="./Re_1000_highres/comparison_u.png"> | <img src="./Re_1000_highres/comparison_v.png"> |
 | 3,200 | 68.4 | <img src="./Re_3200_highres/vel_norm.png"> | <img src="./Re_3200_highres/psi.png"> | <img src="./Re_3200_highres/prs.png"> | <img src="./Re_3200_highres/comparison_u.png"> | <img src="./Re_3200_highres/comparison_v.png"> |
 | 5,000 | 134.1 | <img src="./Re_5000_highres/vel_norm.png"> | <img src="./Re_5000_highres/psi.png"> | <img src="./Re_5000_highres/prs.png"> | <img src="./Re_5000_highres/comparison_u.png"> | <img src="./Re_5000_highres/comparison_v.png"> |
+
+## Requirements
+Tested environment:
+numpy == 1.22.4
+matplotlib == 3.5.2
+
+## License
+MIT License
