@@ -172,9 +172,11 @@ def main():
     div = np.zeros_like(u)
     div[1:-1, 1:-1] = (u[1:-1, 2:] - u[1:-1, :-2]) / 2. / dx \
                     + (v[2:, 1:-1] - v[:-2, 1:-1]) / 2. / dy
-    limit = np.abs(div).max()
-    scale = .05
-    vmin, vmax = - scale * limit, scale * limit
+    # limit = np.abs(div).max()
+    # scale = .05
+    # vmin, vmax = - scale * limit, scale * limit
+    limit = .05
+    vmin, vmax = - limit, limit
     vticks = (vmax - vmin) / 4
     bounds = np.linspace(vmin, vmax, nbar-1)
     norm = colors.BoundaryNorm(bounds, cmap.N)
