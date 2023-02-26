@@ -43,8 +43,8 @@ The following summarizes results at different Reynolds numbers and different res
 
 ## Requirements
 Tested environment:
-numpy == 1.22.4
-matplotlib == 3.5.2
+* numpy == 1.22.4
+* matplotlib == 3.5.2
 
 ## License
 MIT License
