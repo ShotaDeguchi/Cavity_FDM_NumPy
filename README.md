@@ -2,8 +2,8 @@
 
 FDM (Finite Difference Method) simulation of lid-driven cavity flow based on :
 * fractional step method for time integration
-* [Kawamura-Kuwahara scheme](https://doi.org/10.2514/6.1984-340) (4th-order approximation with 4th-order numerical viscosity) for convection
-* 2nd-order central difference scheme for pressure gradient and viscosity terms
+* [Kawamura-Kuwahara scheme](https://doi.org/10.2514/6.1984-340) (3rd-order upwind -> 4th-order central with 4th-order numerical viscosity) for convection
+* 2nd-order central difference for pressure gradient and viscosity terms
 
 The results are compared with the reference solution presented in [Ghia+1986](https://doi.org/10.1016/0021-9991(82)90058-4). 
 
@@ -23,7 +23,7 @@ The following summarizes results at different Reynolds numbers and different res
 | $u(x=0.5)$ | Horizontal velocity along the geometric center |
 | $v(y=0.5)$ | Vertical velocity along the geometric center |
 
-### $\Delta x = \Delta y = 5 \times 10^{-3}$ ($202 \times 202$ discretization)
+### $\Delta x = \Delta y = 5 \times 10^{-3}$ (regular uniform grid)
 | $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 100 | 15.4 | <img src="./Re_100/vel_norm.png"> | <img src="./Re_100/psi.png"> | <img src="./Re_100/prs.png"> | <img src="./Re_100/comparison_u.png"> | <img src="./Re_100/comparison_v.png"> |
@@ -32,7 +32,7 @@ The following summarizes results at different Reynolds numbers and different res
 | 3,200 | 87.5 | <img src="./Re_3200/vel_norm.png"> | <img src="./Re_3200/psi.png"> | <img src="./Re_3200/prs.png"> | <img src="./Re_3200/comparison_u.png"> | <img src="./Re_3200/comparison_v.png"> |
 | 5,000 | 148.5 | <img src="./Re_5000/vel_norm.png"> | <img src="./Re_5000/psi.png"> | <img src="./Re_5000/prs.png"> | <img src="./Re_5000/comparison_u.png"> | <img src="./Re_5000/comparison_v.png"> |
 
-### $\Delta x = \Delta y = 2 \times 10^{-3}$ ($502 \times 502$ discretization)
+### $\Delta x = \Delta y = 2 \times 10^{-3}$ (regular uniform grid)
 | $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 100 | 13.7 | <img src="./Re_100_highres/vel_norm.png"> | <img src="./Re_100_highres/psi.png"> | <img src="./Re_100_highres/prs.png"> | <img src="./Re_100_highres/comparison_u.png"> | <img src="./Re_100_highres/comparison_v.png"> |
