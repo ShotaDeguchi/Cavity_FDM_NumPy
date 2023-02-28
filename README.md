@@ -23,7 +23,7 @@ The following summarizes results at different Reynolds numbers and different res
 | $u(x=0.5)$ | Horizontal velocity along the geometric center |
 | $v(y=0.5)$ | Vertical velocity along the geometric center |
 
-### $\Delta x = 5 \times 10^{-3}$
+### $\Delta x = \Delta y = 5 \times 10^{-3}$ ($202 \times 202$ discretization)
 | $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 100 | 15.4 | <img src="./Re_100/vel_norm.png"> | <img src="./Re_100/psi.png"> | <img src="./Re_100/prs.png"> | <img src="./Re_100/comparison_u.png"> | <img src="./Re_100/comparison_v.png"> |
@@ -32,7 +32,7 @@ The following summarizes results at different Reynolds numbers and different res
 | 3,200 | 87.5 | <img src="./Re_3200/vel_norm.png"> | <img src="./Re_3200/psi.png"> | <img src="./Re_3200/prs.png"> | <img src="./Re_3200/comparison_u.png"> | <img src="./Re_3200/comparison_v.png"> |
 | 5,000 | 148.5 | <img src="./Re_5000/vel_norm.png"> | <img src="./Re_5000/psi.png"> | <img src="./Re_5000/prs.png"> | <img src="./Re_5000/comparison_u.png"> | <img src="./Re_5000/comparison_v.png"> |
 
-### $\Delta x = 2 \times 10^{-3}$
+### $\Delta x = \Delta y = 2 \times 10^{-3}$ ($502 \times 502$ discretization)
 | $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 100 | 13.7 | <img src="./Re_100_highres/vel_norm.png"> | <img src="./Re_100_highres/psi.png"> | <img src="./Re_100_highres/prs.png"> | <img src="./Re_100_highres/comparison_u.png"> | <img src="./Re_100_highres/comparison_v.png"> |
