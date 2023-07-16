@@ -38,7 +38,7 @@ The following summarizes results at different Reynolds numbers and different res
 | 100 | 13.7 | <img src="./Re_100_highres/vel_norm.png"> | <img src="./Re_100_highres/psi.png"> | <img src="./Re_100_highres/prs.png"> | <img src="./Re_100_highres/comparison_u.png"> | <img src="./Re_100_highres/comparison_v.png"> |
 | 400 | 19.2 | <img src="./Re_400_highres/vel_norm.png"> | <img src="./Re_400_highres/psi.png"> | <img src="./Re_400_highres/prs.png"> | <img src="./Re_400_highres/comparison_u.png"> | <img src="./Re_400_highres/comparison_v.png"> |
 | 1,000 | 30.7 | <img src="./Re_1000_highres/vel_norm.png"> | <img src="./Re_1000_highres/psi.png"> | <img src="./Re_1000_highres/prs.png"> | <img src="./Re_1000_highres/comparison_u.png"> | <img src="./Re_1000_highres/comparison_v.png"> |
-| 3,200 | 68.4 | <img src="./Re_3200_highres/vel_norm.png"> | <img src="./Re_3200_highres/psi.png"> | <img src="./Re_3200_highres/prs.png"> | <img src="./Re_3200_highres/comparison_u.png"> | <img src="./Re_3200_highres/comparison_v.png"> |
+| 3,200 | 68.4 | <img src="./Re_3200_highres/vel_norm.png"> | <img src="./Re_3200_highres/psi.png"> | <img src="./Re_3200_highres/prs.png"> | <img src="Re_3200_highres/comparison_u.png"> | <img src="./Re_3200_highres/comparison_v.png"> |
 | 5,000 | 134.1 | <img src="./Re_5000_highres/vel_norm.png"> | <img src="./Re_5000_highres/psi.png"> | <img src="./Re_5000_highres/prs.png"> | <img src="./Re_5000_highres/comparison_u.png"> | <img src="./Re_5000_highres/comparison_v.png"> |
 
 ## Requirements
