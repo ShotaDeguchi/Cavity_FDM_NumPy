@@ -1,4 +1,4 @@
-# 2D lid-driven cavity flow (FDM, NumPy implementation)
+# Cavity_FDM_NumPy
 
 FDM (Finite Difference Method) simulation of 2D lid-driven cavity flow based on :
 * fractional step method for time integration
