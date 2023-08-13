@@ -1,5 +1,7 @@
 # Cavity_FDM_NumPy
 
+Updated version of this repository is found [here](https://github.com/ShotaDeguchi/Cavity_FDM_NumPy2). 
+
 FDM (Finite Difference Method) simulation of 2D lid-driven cavity flow based on :
 * fractional step method for time integration
 * [Kawamura-Kuwahara scheme](https://doi.org/10.2514/6.1984-340) (3rd-order upwind -> 4th-order central with 4th-order numerical viscosity) for convection
