@@ -19,7 +19,7 @@ where $\delta$ is the convergence tolerance, set to $\delta = 10^{-6}$.
 The following summarizes results at different Reynolds numbers and different resolutions. 
 
 | Column name | Description | 
-|:---:|:---:|
+| :---: | :--- |
 | Re | Reynolds number (inertia vs viscosity) |
 | t | Dimensionless time until the convergence (when velocity residual $\le \delta$ is met) |
 | u | Horizontal velocity along the geometric center |
