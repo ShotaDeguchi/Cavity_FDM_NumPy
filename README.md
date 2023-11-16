@@ -1,6 +1,6 @@
 # Cavity_FDM_NumPy
 
-Updated version of this repository is found [here](https://github.com/ShotaDeguchi/Cavity_FDM_NumPy2). 
+Updated version of this repository can be found [here](https://github.com/ShotaDeguchi/Cavity_FDM_NumPy2). 
 
 FDM (Finite Difference Method) simulation of 2D lid-driven cavity flow based on :
 * fractional step method for time integration
