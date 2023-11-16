@@ -20,28 +20,17 @@ The following summarizes results at different Reynolds numbers and different res
 
 | Column name | Description | 
 |:---:|:---:|
-| $\text{Re}$ | Reynolds number (inertia vs viscosity) |
-| $t$ | Dimensionless time until the convergence (when velocity residual $\le \delta$ is met) |
+| Re | Reynolds number (inertia vs viscosity) |
+| t | Dimensionless time until the convergence (when velocity residual $\le \delta$ is met) |
 | $u(x=0.5)$ | Horizontal velocity along the geometric center |
 | $v(y=0.5)$ | Vertical velocity along the geometric center |
 
 ### $\Delta x = \Delta y = 5 \times 10^{-3}$
-| $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 100 | 15.4 | <img src="./Re_100/vel_norm.png"> | <img src="./Re_100/psi.png"> | <img src="./Re_100/prs.png"> | <img src="./Re_100/comparison_u.png"> | <img src="./Re_100/comparison_v.png"> |
-| 400 | 26.8 | <img src="./Re_400/vel_norm.png"> | <img src="./Re_400/psi.png"> | <img src="./Re_400/prs.png"> | <img src="./Re_400/comparison_u.png"> | <img src="./Re_400/comparison_v.png"> |
-| 1,000 | 36.4 | <img src="./Re_1000/vel_norm.png"> | <img src="./Re_1000/psi.png"> | <img src="./Re_1000/prs.png"> | <img src="./Re_1000/comparison_u.png"> | <img src="./Re_1000/comparison_v.png"> |
-| 3,200 | 87.5 | <img src="./Re_3200/vel_norm.png"> | <img src="./Re_3200/psi.png"> | <img src="./Re_3200/prs.png"> | <img src="./Re_3200/comparison_u.png"> | <img src="./Re_3200/comparison_v.png"> |
-| 5,000 | 148.5 | <img src="./Re_5000/vel_norm.png"> | <img src="./Re_5000/psi.png"> | <img src="./Re_5000/prs.png"> | <img src="./Re_5000/comparison_u.png"> | <img src="./Re_5000/comparison_v.png"> |
+| Re | t | Velocity norm  | Streamline | Pressure |
+| :---: | :---: | :---: | :---: | :---: |
+| 100 | 15.4 | ![](Re_100/vel_norm.png) | ![](Re_100/psi.png) | | ![](Re_100/prs.png) |
 
-### $\Delta x = \Delta y = 2 \times 10^{-3}$
-| $\text{Re}$ | $t$ | Velocity norm | Streamline | Pressure | $u(x=0.5)$ | $v(y=0.5)$ |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 100 | 13.7 | <img src="./Re_100_highres/vel_norm.png"> | <img src="./Re_100_highres/psi.png"> | <img src="./Re_100_highres/prs.png"> | <img src="./Re_100_highres/comparison_u.png"> | <img src="./Re_100_highres/comparison_v.png"> |
-| 400 | 19.2 | <img src="./Re_400_highres/vel_norm.png"> | <img src="./Re_400_highres/psi.png"> | <img src="./Re_400_highres/prs.png"> | <img src="./Re_400_highres/comparison_u.png"> | <img src="./Re_400_highres/comparison_v.png"> |
-| 1,000 | 30.7 | <img src="./Re_1000_highres/vel_norm.png"> | <img src="./Re_1000_highres/psi.png"> | <img src="./Re_1000_highres/prs.png"> | <img src="./Re_1000_highres/comparison_u.png"> | <img src="./Re_1000_highres/comparison_v.png"> |
-| 3,200 | 68.4 | <img src="./Re_3200_highres/vel_norm.png"> | <img src="./Re_3200_highres/psi.png"> | <img src="./Re_3200_highres/prs.png"> | <img src="Re_3200_highres/comparison_u.png"> | <img src="./Re_3200_highres/comparison_v.png"> |
-| 5,000 | 134.1 | <img src="./Re_5000_highres/vel_norm.png"> | <img src="./Re_5000_highres/psi.png"> | <img src="./Re_5000_highres/prs.png"> | <img src="./Re_5000_highres/comparison_u.png"> | <img src="./Re_5000_highres/comparison_v.png"> |
+
 
 ## Requirements
 Tested environment:
