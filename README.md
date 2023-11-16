@@ -22,15 +22,26 @@ The following summarizes results at different Reynolds numbers and different res
 |:---:|:---:|
 | Re | Reynolds number (inertia vs viscosity) |
 | t | Dimensionless time until the convergence (when velocity residual $\le \delta$ is met) |
-| $u(x=0.5)$ | Horizontal velocity along the geometric center |
-| $v(y=0.5)$ | Vertical velocity along the geometric center |
+| u | Horizontal velocity along the geometric center |
+| v | Vertical velocity along the geometric center |
 
 ### $\Delta x = \Delta y = 5 \times 10^{-3}$
-| Re | t | Velocity norm  | Streamline | Pressure |
-| :---: | :---: | :---: | :---: | :---: |
-| 100 | 15.4 | ![](Re_100/vel_norm.png) | ![](Re_100/psi.png) | | ![](Re_100/prs.png) |
+| Re | t | Velocity norm  | Pressure | u | v |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 100 | 15.4 | ![](Re_100/vel_norm.png) | ![](Re_100/prs.png) | ![](Re_100/comparison_u.png) | ![](Re_100/comparison_v.png) |
+| 400 | 26.8 | ![](Re_400/vel_norm.png) | ![](Re_400/prs.png) | ![](Re_400/comparison_u.png) | ![](Re_400/comparison_v.png) |
+| 1,000 | 36.4 | ![](Re_1000/vel_norm.png) | ![](Re_1000/prs.png) | ![](Re_1000/comparison_u.png) | ![](Re_1000/comparison_v.png) |
+| 3,200 | 87.5 | ![](Re_3200/vel_norm.png) | ![](Re_3200/prs.png) | ![](Re_3200/comparison_u.png) | ![](Re_3200/comparison_v.png) |
+| 5,000 | 148.5 | ![](Re_5000/vel_norm.png) | ![](Re_5000/prs.png) | ![](Re_5000/comparison_u.png) | ![](Re_5000/comparison_v.png) |
 
-
+### $\Delta x = \Delta y = 2 \times 10^{-3}$
+| Re | t | Velocity norm  | Pressure | u | v |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| 100 | 13.7 | ![](Re_100_highres/vel_norm.png) | ![](Re_100_highres/prs.png) | ![](Re_100_highres/comparison_u.png) | ![](Re_100_highres/comparison_v.png) |
+| 400 | 19.2 | ![](Re_400_highres/vel_norm.png) | ![](Re_400_highres/prs.png) | ![](Re_400_highres/comparison_u.png) | ![](Re_400_highres/comparison_v.png) |
+| 1,000 | 30.7 | ![](Re_1000_highres/vel_norm.png) | ![](Re_1000_highres/prs.png) | ![](Re_1000_highres/comparison_u.png) | ![](Re_1000_highres/comparison_v.png) |
+| 3,200 | 68.4 | ![](Re_3200_highres/vel_norm.png) | ![](Re_3200_highres/prs.png) | ![](Re_3200_highres/comparison_u.png) | ![](Re_3200_highres/comparison_v.png) |
+| 5,000 | 134.1 | ![](Re_5000_highres/vel_norm.png) | ![](Re_5000_highres/prs.png) | ![](Re_5000_highres/comparison_u.png) | ![](Re_5000_highres/comparison_v.png) |
 
 ## Requirements
 Tested environment:
